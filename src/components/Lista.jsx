@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Lista = () => {
+export const Listas = () => {
   return (
     <div>Lista</div>
   )
