@@ -1,9 +1,11 @@
-import { useState } from 'react'
+ 
 //import reactLogo from './assets/react.svg'
-  import './App.css';
-  import { Listas } from './components/Lista.jsx';
-  function App() {
   
+import './App.css';
+  import { Listas } from '../components/Lista.jsx';
+  import { AgregarTarea } from '../components/AgregarTarea.jsx';
+
+  function App() {
   return (
     <>
       <div className='EscribirLista'>
@@ -25,4 +27,4 @@ import { useState } from 'react'
     </>
  )
  }  
-export default App;
+export default App
