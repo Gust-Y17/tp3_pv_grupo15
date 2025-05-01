@@ -1,7 +1,12 @@
-import React from 'react'
-
-export const Listas = () => {
+export const Listas = ({ tareas }) => {
   return (
-    <div>Lista</div>
+    <ul>
+      {tareas.map((tarea, index) => (
+        <li key={index}>{tarea}
+          <button className="btn-eliminar">ELIMINAR</button> 
+         
+        </li>
+      ))}
+    </ul>
   )
 }
