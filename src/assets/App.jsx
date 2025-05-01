@@ -1,29 +1,30 @@
- 
+
 //import reactLogo from './assets/react.svg'
-  
-import './App.css';
+import { useState } from 'react';
   import { Listas } from '../components/Lista.jsx';
   import { AgregarTarea } from '../components/AgregarTarea.jsx';
 
   function App() {
+    const [tareas,settareas] = useState([]);
   return (
     <>
       <div className='EscribirLista'>
         <h1>Lista de Tareas</h1>
+
         <div className='Cantidad de Tareas'> 
-          <h3>Numero de Tareas:4</h3>
-          <h3>Pendientes:3</h3>
-  
+          <h3>Numero de Tareas: {tareas.length}</h3>
         </div>
+
         <div className='AgregadoTarea'>
            <h3>Agregar Tarea</h3>
-           <AgregarTarea/>
+           <AgregarTarea settareas={settareas}/>
         </div>
-       <Listas/>
+
+       <Listas tareas={tareas}/>
       </div>
   
   
-        <Listas/>
+         
     </>
  )
  }  
