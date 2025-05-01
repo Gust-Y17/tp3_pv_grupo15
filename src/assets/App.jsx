@@ -20,7 +20,7 @@ import { useState } from 'react';
            <AgregarTarea settareas={settareas}/>
         </div>
 
-       <Listas tareas={tareas}/>
+       <Listas tareas={tareas} setTareas={settareas}/>
       </div>
   
   
