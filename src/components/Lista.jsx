@@ -1,18 +1,23 @@
-import { Eliminar } from "./EliminarTarea"; // Asegúrate de que el nombre del archivo coincida
+import { Eliminar } from "./EliminarTarea";
+import { ItemsLista } from "./ItemsLista"; //tachado
 
 export const Listas = ({ tareas, setTareas }) => {
+  //  Nuevo estado para saber qué tareas están realizadas
+  const [realizadas, setRealizadas] = useState(
+    new Array(tareas.length).fill(false)
+  );
+
   return (
     <ul>
       {tareas.map((tarea, index) => (
-        <li key={index}>
-          {tarea}
-          <button
-            className="btn-eliminar"
-            onClick={() => Eliminar(index, tareas, setTareas)}
-          >
-            ELIMINAR
-          </button>
-        </li>
+        <ItemsLista
+          key={index}
+          index={index}
+          tarea={tarea}
+          realizadas={realizadas}
+          setRealizadas={setRealizadas}
+          eliminarTarea={() => Eliminar(index, tareas, setTareas)} 
+        />
       ))}
     </ul>
   );
