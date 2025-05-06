@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { Eliminar } from "./EliminarTarea";
 import { ItemsLista } from "./ItemsLista"; //tachado
 import React, { useState } from 'react'
@@ -24,7 +24,7 @@ export const Listas = ({ tareas, setTareas }) => {
     </ul>
   );
 };
-=======
+
 import React from 'react'
 
 export const Lista = () => {
@@ -32,4 +32,3 @@ export const Lista = () => {
     <div>Lista</div>
   )
 }
->>>>>>> 99dcc63 (Aporte Juan Ponzetti)

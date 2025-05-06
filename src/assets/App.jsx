@@ -28,14 +28,6 @@ import { useState } from 'react';
     </>
  )
  }  
-export default App
-=======
-import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-  import './App.css';
-  import { Listas } from './components/Lista.jsx';
-  function App() {
-  
   return (
     <>
       <div className='EscribirLista'>
@@ -56,6 +48,4 @@ import { useState } from 'react'
         <Listas/>
     </>
  )
- }  
 export default App;
->>>>>>> 99dcc63 (Aporte Juan Ponzetti)
