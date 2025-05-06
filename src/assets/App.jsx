@@ -2,6 +2,7 @@
 //import reactLogo from './assets/react.svg'
 import ProductoJS from '../components/Producto.jsx';
 import { useState } from 'react';
+import './App.css';
   import { Listas } from '../components/Lista.jsx';
   import { AgregarTarea } from '../components/AgregarTarea.jsx';
 

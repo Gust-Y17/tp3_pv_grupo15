@@ -24,11 +24,3 @@ export const Listas = ({ tareas, setTareas }) => {
     </ul>
   );
 };
-
-import React from 'react'
-
-export const Lista = () => {
-  return (
-    <div>Lista</div>
-  )
-}
