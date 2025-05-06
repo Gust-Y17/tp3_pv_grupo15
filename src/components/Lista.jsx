@@ -1,5 +1,6 @@
 import { Eliminar } from "./EliminarTarea";
 import { ItemsLista } from "./ItemsLista"; //tachado
+import React, { useState } from 'react'
 
 export const Listas = ({ tareas, setTareas }) => {
   //  Nuevo estado para saber qué tareas están realizadas

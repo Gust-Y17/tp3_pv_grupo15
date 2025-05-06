@@ -14,14 +14,10 @@ export const AgregarTarea = ({ settareas })=>{
   return (
   <>
   <form onSubmit={Add}> 
-    <input 
-    type="text" 
-    className='EstiloTarea' 
-     placeholder="Escriba una tarea" 
-    value={newt}
+    <input type="text" className='EstiloTarea' placeholder="Escriba una tarea" value={newt}
     onChange={(e) => setnew(e.target.value)}/>
 
-    <button type="submit">Agregar Tarea</button>
+    <button className='btagregar' type="submit">Agregar Tarea</button>
   </form>
 
 
