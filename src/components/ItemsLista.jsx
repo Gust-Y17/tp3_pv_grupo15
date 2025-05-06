@@ -13,8 +13,6 @@ export const ItemsLista = ({ tarea, index, realizadas, setRealizadas, eliminarTa
       key={index}
       style={{ 
         display: 'flex', 
-        alignItems: 'center', 
-        gap: '1rem' 
       }}
     >
       {/* Solo el texto se tacha */}
@@ -22,11 +20,11 @@ export const ItemsLista = ({ tarea, index, realizadas, setRealizadas, eliminarTa
         {tarea}
       </span>
 
-      <button onClick={marcarComoRealizada}>
+      <button className='btagregar' onClick={marcarComoRealizada}>
         {realizadas[index] ? 'Desmarcar' : 'Realizado'}
       </button>
 
-      <button onClick={eliminarTarea}>
+      <button className='btagregar' onClick={eliminarTarea}>
         Eliminar
       </button>
     </li>

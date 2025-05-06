@@ -5,6 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
+  background-color: #686dc3;
   background-color: #242424;
 
   font-synthesis: none;
@@ -13,6 +14,70 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.EscribirLista{
+  box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.2);
+	padding: 30px;
+	border-radius: 20px;
+	width: 500px;
+  background-color: rgb(154, 154, 236);
+}
+.EstiloTarea{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  flex: 1;
+  font-family: inherit;
+  font-size: 15;
+  color: #ffffff;
+}
+
+ul {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+ul li {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+ul li span {
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+	align-items: end;
+}
+
+
+.btagregar {
+  border: none;
+  background-color: rgb(16, 153, 160);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+}
+.btagregar:hover{
+  background-color: rgb(37, 103, 106);
+}
+
+
+body {
+  font-family: Poppins;
+	max-width: 1200px;
+	margin: 40px auto;
+	display: flex;
+	justify-content: center;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -28,7 +93,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
+  }
 
 h1 {
   font-size: 3.2em;
@@ -40,6 +105,7 @@ button {
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
+  font-weight: 100;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
