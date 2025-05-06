@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
-
 export const AgregarTarea = ({ settareas })=>{
    
   const [newt,setnew] = useState ('');
-
   
   const Add = (e) => {
     e.preventDefault();
@@ -23,4 +21,9 @@ export const AgregarTarea = ({ settareas })=>{
 
   </>
   )
+export const AgregarTarea = () => {
+  return <form>
+    <input type="text" className='EstiloTarea' name='AgregarTarea' placeholder="Escriba una tarea" />
+    <button type="submit">Agregar</button>
+  </form>
 }
