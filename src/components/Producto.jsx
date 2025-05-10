@@ -92,13 +92,15 @@ function ProductoJS() {
     return(
         <>
         <form onSubmit={submint}>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre del producto" required />
-            <input type="text" id="precio" name="precio" placeholder="Precio" required />
-            <button className="btagregar" type="submit">Agregar Producto </button>
+            <div>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre del producto" required />
+                <input type="text" id="precio" name="precio" placeholder="Precio" required />
+                <button className="btagregar" type="submit">Agregar Producto </button>
+            </div>
             <h2>Productos Agregados</h2>
         </form>
             <ul className="lisProducto"></ul>
-        <div>
+        <div className="botones-container">
             <button className="botonesprod" onClick={handlecaros}>Productos caros</button>
             <button className="botonesprod" onClick={handleconIVA}>Calcular IVA</button>
             <button className="botonesprod" onClick={handleordenar}>Ordenar Precios</button>
