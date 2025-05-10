@@ -22,15 +22,17 @@
   background-color: rgb(154, 154, 236);
 }
 .EstiloTarea{
+  margin-right: 8px;
   border: none;
   outline: none;
-  padding: 10px 20px;
+  padding: 6.5px 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
+  border-radius: 5px;
   flex: 1;
   font-family: inherit;
   font-size: 15;
   color: #1e1717;
+  width: 200px;
 }
 
 ul {
@@ -54,17 +56,44 @@ ul li span {
 	align-items: end;
 }
 
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#nombre {
+  margin-right: 5px;
+  padding: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+#precio {
+  margin-right: 6px;
+  padding: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 110px;
+}
 
 .btagregar {
   border: none;
   background-color: rgb(16, 153, 160);
   color: #fff;
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 6px;
+  border-radius: 5px;
   font-family: inherit;
   cursor: pointer;
   font-size: 15px;
   font-weight: 700;
+  white-space: nowrap;
 }
 .btagregar:hover{
   background-color: rgb(37, 103, 106);
@@ -100,18 +129,23 @@ h1 {
   line-height: 1.1;
 }
 
+.botones-container {
+  display: flex;
+  gap: 10px;
+}
+
 button {
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 100;
+  font-size: 8;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
